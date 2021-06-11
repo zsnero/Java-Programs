@@ -38,7 +38,7 @@ public class Password {
         if(!password.matches(lowerCase)) {
             System.out.println("Password should contain Lower Case Letters");
         }
-
+        
         String number = "(.*[0-9].*)";
         if(!password.matches(number)) {
             System.out.println("Password should contain numbers");
@@ -50,7 +50,6 @@ public class Password {
             System.out.println("Password should not contain symbols");
             isValid = false;
         }
-
         return isValid;
     }
 }
